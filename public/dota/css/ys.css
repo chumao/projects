@@ -1,0 +1,313 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clear {
+	clear: both;
+	overflow: hidden;
+	height: 0;
+}
+body {
+	font-family: Verdana,Geneva,Arial,sans-serif;
+	background: url(/dota/img/body-bg.jpg) repeat;
+	font-size: small;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	color: #363232;
+}
+h1,h2,h3,h4,h5 {
+	color: #363232;
+	font-family: Microsoft YaHei ;
+	line-height: 1.2em;	
+}
+h1 {
+	font-size: 2.5em;
+	font-weight: bolder;
+	padding-bottom: 6px; 
+	text-shadow: #ccc 3px 3px 3px;
+}
+h2 {
+	font-size: 1.8em;
+	font-weight: bold;
+	padding: 10px 0px; 
+	text-shadow: #ccc 3px 3px 3px;
+}
+h3 {
+	font-size: 1.3em;
+	font-weight: bold;
+	text-shadow: #ccc 3px 3px 3px;
+}
+h4 {
+	font-size: 1em;
+	font-style: italic;
+	font-family: arial;
+	color: #ccc;
+}
+p {
+	line-height: 1em;
+}
+#container {
+	background: url(/dota/img/pattern.jpg) repeat;
+	width: 750px;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid #fff;
+}
+header {
+	text-align: center;
+	padding: 20px 0px 30px 0px;
+	/*border-bottom: 1px solid #fff;*/
+	background: url(/dota/img/divider.jpg) repeat-x left bottom;
+}
+header h3,#main3 h3 {
+	font-family: Arial;
+}
+.fontstyle1 {
+	color: #8b4513;
+}
+#content1 {
+	float : left;
+	width: 450px;
+}
+#content1 p {
+	line-height: 1.5em;
+	font-family: Gourier New,Verdana,sans-serif;
+}
+#main1 h3 {
+	font-family: cursive;
+	padding: 10px;
+}
+.reg {
+	float: right;
+	width: 270px;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+}
+.border-radius {
+	border-radius: 5px;
+}
+
+li {
+	padding-bottom: 5px;
+}
+#content2 {
+	background: url(/dota/img/bg2.jpg);
+	border: 10px solid #fff;
+	border-radius: 5px;
+	padding: 40px 20px;
+	text-align: center;
+}
+#content2 input{
+	border:solid 1px #ccc;
+	border-radius:6px;
+}
+input {
+	width: 200px;
+	height: 30px;
+	margin: 5px;
+}
+.sub1 {
+	background: url(/dota/img/sub1.png) no-repeat;
+	width: 210px;
+	height: 36px;
+	color: #fff;
+	line-height: 36px; /*书上看懂line-height*/
+	border: none;
+}
+#main1 {
+	padding: 30px 0px;
+	background: url(/dota/img/divider.jpg) repeat-x left bottom;
+}
+#main2 {
+	padding: 30px 0px;
+	text-align: center;
+	background: url(/dota/img/divider.jpg) repeat-x left bottom;
+}
+.list li {
+	background: url(/dota/img/duigou.png) left 3px no-repeat;
+	padding-left: 30px;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+.fontstyle2 {
+	color: #ccc;
+}
+#main2 h4,#main3 h4,#main4 h4 {
+	padding: 0px;
+	margin-top: -10px;
+}
+.content3 {
+	padding-top: 20px;
+}
+.imgstyle1 {
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	padding: 2px;
+	background: #fff;
+
+}
+#main3 {
+	text-align: center;
+	padding: 30px 0px 40px 0px;
+	background: url(/dota/img/divider.jpg) repeat-x left bottom;
+}
+.linehg1 {	
+	line-height: 18px;
+	text-align: center;
+}
+#panda1 {
+	width: 240px;
+	float: left;
+	padding: 20px 5px;
+}
+#panda2 {
+	width: 240px;
+	float: right;
+	padding: 20px 5px;
+}
+#panda3 {
+	padding: 20px 5px;
+	float: left;
+	width: 240px;
+}
+#main4 {
+	text-align: center;
+	padding: 30px 0px 70px 0px;
+	background: url(/dota/img/divider.jpg) repeat-x left bottom;
+}
+#tb1 {
+	width: 275px;
+	float: left;
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-left: 95px;
+	background: url(/dota/img/divider.jpg) repeat-y right top;
+}
+#tb2 {
+	width: 275px;
+	padding-left: 60px;
+	padding-top: 20px;
+	float: left;
+}
+table {
+	padding: 10px 5px;
+	margin: 0px;
+}
+th,td {
+	padding: 10px 5px;
+}
+th {
+	font-weight: bold;
+}
+caption {
+	padding: 10px;
+	font-family: cursive;
+	font-weight: bold;
+	color: #8b4513;
+}
+#tb1 th,td,caption {
+	text-align: right;
+}
+#tb2 caption,#tb2 th,#tb2 td {
+	text-align: left;
+}
+#mainx {
+	padding: 30px 0px 30px 0px;
+	background: url(/dota/img/divider.jpg) repeat-x left bottom;
+}
+#cinr1 {
+	width: 260px;
+	float: left;
+}
+#cinr2 {
+	width: 260px;
+	float: left;
+}
+#cinr3 {
+	width: 230px;
+	float: right;
+	line-height: 1.5em;
+}
+.world {
+	background: url(/dota/img/world.png) bottom right;
+	background-repeat: no-repeat;
+	width: 210px;
+}
+.fontstyle4 {
+	font-weight: bold;
+	padding-top: 10px;
+	margin-bottom: -15px;
+}
+footer {
+	text-align: center;
+	padding: 25px;
+	font-size: 0.8em;
+}
+a:link {
+	color: #8b4513;
+	text-decoration: none;
+}
+a:visited {
+	color: #8b4513;
+}
+a:hover {
+	color: #c66;
+	text-decoration: underline;
+}
+#cinr2 a:visited {
+	color: #000;
+}
+.border-img {
+	/*border: solid 1px #ccc;*/
+}
+.meida {
+	display: inline-block;
+	padding: 9px;
+	border: solid 1px #ccc;
+	background-color:#fff;
+}
