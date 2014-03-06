@@ -33,4 +33,5 @@ app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('chumao server listening on port ' + app.get('port'));
+  
 });
