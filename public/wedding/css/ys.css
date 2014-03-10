@@ -119,6 +119,10 @@ nav table {
 nav th {
 	width: 200px;
 }
+nav .active a{
+	color: #E6A4CF;
+	text-decoration: none;
+}
 .fontstyle1 {
 	font-size: 1.8em;
 	padding: 0px 20px;
@@ -258,3 +262,4 @@ a:hover {
 	color: #E6A4CF;
 	text-decoration: none;
 }
+
