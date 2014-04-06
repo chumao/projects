@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>《dota2》G联赛2013第一季度</title>
         <link rel="stylesheet" type="text/css" href="/dota/css/ys.css">
+        <script type="text/javascript" src="/dota/js/jquery.js"></script>
+        <script type="text/javascript" src="/dota/js/main.js"></script>
     </head>
     <body>
         <div id="container">
@@ -14,13 +16,13 @@
             </header>
             <div id="main1">
                 <div class="reg">
-                    <form action="" method="POST">
+                    <form action="/reg" method="post" id="reg">
                         <div id="content2">
                             <h3>互动信息：</h3>
                             <p>
-                                <input type="text" name="name", placeholder="姓名" /><br />
-                                <input type="text" name="", placeholder="微信" /><br />
-                                <input type="text" name="", placeholder="微博" /><br />
+                                <input type="text" name="name", placeholder="姓名" required/><br />
+                                <input type="text" name="weixin", placeholder="微信" /><br />
+                                <input type="text" name="weibo", placeholder="微博" /><br />
                                 <input type="text" name="email", placeholder="邮箱" />
                             </p>
                             <button class="sub1">确认提交</button>

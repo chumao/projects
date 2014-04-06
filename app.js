@@ -6,6 +6,7 @@
 var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
+var reg  = require('./routes/reg');
 var http = require('http');
 var path = require('path');
 
@@ -30,6 +31,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/users', user.list);
+app.post('/reg', reg.add);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('chumao server listening on port ' + app.get('port'));
