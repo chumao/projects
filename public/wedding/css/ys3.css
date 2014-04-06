@@ -4,3 +4,7 @@ body {
 .container {
   background-color: #000;
 }
+#main {
+    position: relative;
+    height: 390px;
+}

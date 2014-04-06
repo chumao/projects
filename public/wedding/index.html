@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<title>我们结婚吧，做最专业的婚礼</title>
 		<link rel="stylesheet" type="text/css" href="/wedding/css/ys.css">
+		<script src="/wedding/js/jquery-1.11.0.min.js"></script>
+		<script src="/wedding/js/index.js"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -14,21 +16,24 @@
 			</header>
 			<div class="clear"></div>
 			<nav>
-				<table>
-					<tr>
-						<th class="fontstyle1 active"><a href="">官方主页</a></th>
-						<th class="fontstyle1"><a href="/wedding/s1.html">婚礼服务</a></th>
-						<th class="fontstyle1"><a href="/wedding/s2.html">婚礼场地</a></th>
-						<th class="fontstyle1"><a href="/wedding/s3.html">我的团队</a></th>
-					</tr>
-				</table>
+				<ul>
+					<li class="fontstyle1 active"><a href="">官方主页</a></li>
+					<li class="fontstyle1"><a href="/wedding/s1.html">婚礼服务</a></li>
+					<li class="fontstyle1"><a href="/wedding/s2.html">婚礼场地</a></li>
+					<li class="fontstyle1"><a href="/wedding/s3.html">我的团队</a></li>
+				</ul>
 			</nav>
 			<div id="main1">
-				<p><img src="/wedding/img/top-angle.png" class="imgstyle1"></p>
-				<p><img src="/wedding/img/we1.jpg" class="imgstyle3"></p>
-				<p><img src="/wedding/img/bottom-angle.png" class="imgstyle2"></p>	
+				<div id="content1_1">
+					<p id="yincang_1"><img src="/wedding/img/we1.jpg" class="imgstyle3"></p>
+					<p id="yincang_2"><img src="/wedding/img/s3.jpg" class="imgstyle3"></p>
+					<p id="yincang_3"><img src="/wedding/img/we2.jpg" class="imgstyle3"></p>
+					<p><img src="/wedding/img/top-angle.png" class="imgstyle1"></p>
+					<p><img src="/wedding/img/bottom-angle.png" class="imgstyle2"></p>
+				</div>
+				<p class="fontstyle5"><a id="qh1" href="#" class="current_img"></a><a  id="qh2" href="#"></a><a  id="qh3" href="#"></a></p>	
 			</div>		
-			<div id="xx"></div>
+			<div class="clear"></div>
 			<div id="main2">
 				<div id="content1">
 				<h3 class="fontstyle2">公司介绍及宗旨</h3>
@@ -63,8 +68,8 @@
 					<form action="" method="GET" >
 						<h3 class="fontstyle2">联系我们：</h3>
 						<div id="inputx">
-							<input type="text" name="" placeholder="姓名" class="input1">
-							<input type="text" name="" placeholder="邮箱" class="input1"><br>
+							<input id="contact_name" type="text" name="name" placeholder="姓名" class="input1">
+							<input type="text" name="mail_box" placeholder="邮箱" class="input1"><br>
 							<textarea name=""  class="input1"></textarea>
 							<button class="sub" ></button>
 						</div>
