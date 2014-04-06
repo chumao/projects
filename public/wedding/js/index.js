@@ -37,4 +37,20 @@ $(document).ready(function(){
         $(this).addClass('current_img');
         event.preventDefault()
     })
+
+    $('#contact_us').on('submit', function (event) {
+        var $self = $(this);
+
+        var request = $.ajax({
+            url: $self.attr('action'),
+            type : $self.attr('method'),
+            data : $self.serialize(),
+        })
+
+        request.done(function (data) {
+            alert(data.msg)
+        })
+
+        event.preventDefault()
+    })
 });
