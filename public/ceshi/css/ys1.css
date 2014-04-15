@@ -1,0 +1,9 @@
+body {
+    font-size: 30px;
+}
+a {
+    background: url(/ceshi/img/s5.jpg) no-repeat 0 0;
+}
+a:hover {
+    background: url(/ceshi/img/s5.jpg) no-repeat 0px -30px;
+}

@@ -118,7 +118,7 @@ nav li {
 	margin: 10px 47px;
 	margin-top: -10px;
 }
-nav .active a{
+nav.active a{
 	color: #E6A4CF;
 	text-decoration: none;
 }
