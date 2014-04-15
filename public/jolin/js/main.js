@@ -31,40 +31,7 @@ $("#flash_btn").click(function(event) {
 })
 
 
-function job_focus() {
-    var imgfocus = 0
-    var job = ["#jws", "#ynz", "#qxs", "#gdj"]
-    var vid =[
-    'http://v.nycs.syyx.com/nycs/swf/jian_5_8.swf',
-    'http://v.nycs.syyx.com/nycs/swf/yi_5_8.swf',
-    'http://v.nycs.syyx.com/nycs/swf/qiang_5_8.swf',
-    'http://v.nycs.syyx.com/nycs/swf/ge_5_8.swf'
-    ]
 
-    getflash(vid[0], 238, 134, job[0]);
-
-    for (var i = 4; i--;) {
-        $("#j_tab span").eq(i).mouseover(function(a) {
-            return function() {
-                $("#j_tab span").eq(imgfocus).removeClass("check_" + imgfocus)
-                $(this).addClass("check_" + a)
-                $("#j_con .con").eq(imgfocus).css("display", "none")
-                var focus = $("#j_con .con").eq(a)
-                focus.css("display", "block")
-                if($(job[a]).html()==""){
-                    getflash(vid[a], 238, 134, job[a]);
-                }
-                $("#j_video").click(function(a) {
-                    return function() {
-                        video(vid2[a])
-                    }
-                }(a))
-                imgfocus = a;
-            }
-        }(i))
-    }
-}
-job_focus()
 
 function img_scroll() {
 
@@ -107,10 +74,51 @@ function img_scroll() {
     })
     $("#scroll_body a").lightBox();
 }
-img_scroll()
 
-$("#to_reg_3").click(function() {
+
+$("#to_reg_3").click(function(event) {
     $("html").animate({ scrollTop: 574 }, "normal")
     $("body").animate({ scrollTop: 574 }, "normal")
     $("#txtUserAccount").select()
+    event.preventDefault()
 })
+
+$(function() {
+    $('#reg_button').click(function(event) {
+        alert('后台功能开发中')
+        event.preventDefault()
+    })
+
+    switch_job()
+
+    img_scroll()
+})
+
+function switch_job() {
+    var job = ["#jws", "#ynz", "#qxs", "#gdj"];
+    var vid =[
+        'http://v.nycs.syyx.com/nycs/swf/jian_5_8.swf',
+        'http://v.nycs.syyx.com/nycs/swf/yi_5_8.swf',
+        'http://v.nycs.syyx.com/nycs/swf/qiang_5_8.swf',
+        'http://v.nycs.syyx.com/nycs/swf/ge_5_8.swf'
+    ];
+
+    getflash(vid[0], 238, 134, job[0]);
+
+    $('#j_tab span').mouseover(function(event) {
+        var $self = $(this);
+
+        var index = $(this).index()
+
+        $self.addClass("check_" + index);
+
+        $self.siblings().attr("class", "");
+
+        $("#j_con .con").hide()
+
+        $("#j_con .con").eq(index).show()
+
+        getflash(vid[index], 238, 134, job[index]);
+    })
+
+}
