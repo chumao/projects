@@ -1,0 +1,228 @@
+doctype html
+html
+    head
+        link(rel="shortcut icon", href="/jolin/img/favicon.ico", type="image/x-icon")
+        meta(charset="utf-8")
+        meta(name="description", content="全新2012题材人气巨作《诺亚传说》，科技与魔法完美融合的未来新世界，揭秘2012末日预言！唯美的未来世界，个性的异能职业，革新的趣味玩法，激爽的跨服PK，首创“微消费”公平模式，终极内测火爆进行中，7组万人新服等你开启！")
+        title 2013必玩火爆网游《诺亚传说》蔡依林倾情代言 一起争霸未来战场！
+        link(href="/jolin/css/main.css", rel="stylesheet")
+    body
+        .container
+            .wrap
+                .main
+                    .nav
+                        a(href="http://nycs.syyx.com/index.shtml", target="_blank", title="官网首页", hidefocus="true") 官网
+                        | |
+                        a(href="http://user.syyx.com/reg.aspx", target="_blank", title="注册账号", hidefocus="true") 注册
+                        | |
+                        a(href="http://nycs.syyx.com/DownLoad/Index.shtml", target="_blank", title="下载游戏", hidefocus="true") 下载
+                        | |
+                        a(href="http://bbs.nycs.syyx.com/", target="_blank", title="玩家论坛", hidefocus="true") 论坛
+                    a.logo(href="http://nycs.syyx.com/index.shtml", target="_blank") 诺亚传说
+                    #prize
+                    #flash
+                    #flash_but
+                    #flash_btn
+                    #rungame_v
+                    #rungame_v2
+                    a.rungame_1(href="#")
+                    .reg_panel
+                        .reg
+                            table.reg_form(border="0", cellpadding="0", cellspacing="0")
+                                tr
+                                    td.reg_form_item_name 账    号：
+                                    td.reg_form_item_input
+                                        input#txtUserAccount(type="text", maxlength="16")
+                                    td
+                                        #txtUserAccountTip
+                                tr
+                                    td.reg_form_item_name 密    码：
+                                    td.reg_form_item_input
+                                        input#txtPasswords(type="password", maxlength="16")
+                                        input#txtPasswordsVal.disnone(type="text")
+                                    td
+                                        #txtPasswordsTip
+                                tr
+                                    td.reg_form_item_name 重复密码：
+                                    td.reg_form_item_input
+                                        input#txtConfirm(type="password")
+                                        input#txtConfirmVal.disnone(type="text")
+                                    td
+                                        #txtConfirmTip
+                                tr
+                                    td.reg_form_item_name 真实姓名：
+                                    td.reg_form_item_input
+                                        input#txtTrueName(type="text", maxlength="20")
+                                    td
+                                        #txtTrueNameTip
+                                tr
+                                    td.reg_form_item_name 身 份 证：
+                                    td.reg_form_item_input
+                                        input#txtCardID(type="text", maxlength="18")
+                                    td
+                                        #txtCardIDTip
+                                tr
+                                    td.reg_form_item_name 验 证 码：
+                                    td.reg_form_item_input.validate_num_input
+                                        input#txtValidate(type="text", maxlength="20")
+                                        img#validateimg.disnone(src="", alt="点击刷新验证码")
+                                    td
+                                        #txtValidateVal
+                            .agreement
+                                input#chk_XieYi(type="checkbox", checked="")
+                                | 同意
+                                a(href="http://user.syyx.com/policy/userpolicy.aspx", target="_blank", hidefocus="true")
+                                    | 《使用协议及隐私协议》
+                            .reg_submit
+                                a#reg_button(href="#", hidefocus="true")
+                                span#regProcessTip
+                        #reg_step2
+                            .active
+                                .success
+                                    | 恭喜您获得
+                                    span#card_type VIP网吧特权礼包
+                                div
+                                    | 您的账号：
+                                    input#reg_account(type="text")
+                                div
+                                    | 激活码为：
+                                    input#active_code(type="text")
+                                a#active_link(href="#", hidefocus="true")
+                        #reg_step3
+                            .no_card
+                                .success 恭喜您，注册成功!
+                                div 今天的礼包卡已发放完毕。
+                                div
+                                    | 您的账号：
+                                    span#reg_account3
+                        #reg_step4
+                            .active_success
+                                .success 恭喜您，激活成功!
+                                div 请在游戏中礼包大使
+                                div 坐标（235，130）处领取礼包
+                        #reg_step5
+                            .active_fail
+                                .fail 激活失败!
+                                #active_tip
+                                span#back 返回
+                        .rungame_bg
+                            a.rungame(href="javascript:rungame()", hidefocus="true")
+                    #job
+                        #j_con
+                            .jws.con(style="display:block")
+                                .feat
+                                    span 单挑切磋：
+                                    | ★★★★★
+                                    br
+                                    span 团队作战：
+                                    | ★★★
+                                    br
+                                    span 升级打怪：
+                                    | ★★★★
+                                    br
+                                    span 操作难度：
+                                    | ★★★
+                                .feat2
+                                    strong 攻击类型：
+                                    | 物理攻击
+                                    br
+                                    strong 职业定位：
+                                    | 近程、瞬间爆发、快速突进
+                                #jws.video
+                            .ynz.con
+                                .feat
+                                    span 单挑切磋：
+                                    | ★★★
+                                    br
+                                    span 团队作战：
+                                    | ★★★★
+                                    br
+                                    span 升级打怪：
+                                    | ★★★★★
+                                    br
+                                    span 操作难度：
+                                    | ★★★★★
+                                .feat2
+                                    strong 攻击类型：
+                                    | 魔法攻击
+                                    br
+                                    strong 职业定位：
+                                    | 远程、群体伤害、瞬间移动
+                                #ynz.video
+                            .qxs.con
+                                .feat
+                                    span 单挑切磋：
+                                    | ★★★★
+                                    br
+                                    span 团队作战：
+                                    | ★★★★
+                                    br
+                                    span 升级打怪：
+                                    | ★★★
+                                    br
+                                    span 操作难度：
+                                    | ★★★★★
+                                .feat2
+                                    strong 攻击类型：
+                                    | 物理攻击
+                                    br
+                                    strong 职业定位：
+                                    | 远程、超高攻速、隐身杀手
+                                #qxs.video
+                            .gdj.con
+                                .feat
+                                    span 单挑切磋：
+                                    | ★★★★
+                                    br
+                                    span 团队作战：
+                                    | ★★★★★
+                                    br
+                                    span 升级打怪：
+                                    | ★★★
+                                    br
+                                    span 操作难度：
+                                    | ★★★★
+                                .feat2
+                                    strong 攻击类型：
+                                    | 物理攻击
+                                    br
+                                    strong 职业定位：
+                                    | 近程、不死金刚、减速控制
+                                #gdj.video
+                        #j_tab
+                            span.check_0
+                            span
+                            span
+                            span
+                        a#to_reg_3(href="javascript:undefined")
+                    #img_scroll
+                        #prev.button
+                        .scroll_box
+                            #scroll_body(style="margin-left:0px")
+                                a(href="/jolin/img/l1.jpg")
+                                    img(src="/jolin/img/s1.jpg", width="220", height="215", style="display:inline")
+                                a(href="/jolin/img/l2.jpg")
+                                    img(delay="/jolin/img/s2.jpg", width="220", height="215")
+                                a(href="/jolin/img/l3.jpg")
+                                    img(delay="/jolin/img/s3.jpg", width="220", height="215")
+                                a(href="/jolin/img/l4.jpg")
+                                    img(delay="/jolin/img/s4.jpg", width="220", height="215")
+                                a(href="/jolin/img/l5.jpg")
+                                    img(delay="/jolin/img/s5.jpg", width="220", height="215")
+                                a(href="/jolin/img/l6.jpg")
+                                    img(delay="/jolin/img/s6.jpg", width="220", height="215")
+                        #next.button
+                    .copy_right
+                        | 文网游备字[2011]C-RPG014字 | 文网文【2009】263号 | 增值电信业务经营许可证 粤B2-20080061 粤ICP备10029615号
+                        br
+                        | 出版号 ISBN 978-7-900267-01-6 | Copyright@2007-2012 深圳市尚游网络科技有限公司 版权所有
+                        a.feet_logo(href="http://www.syyx.com/", target="_blank", hidefocus="true")
+        script(src="/jolin/js/jquery-1.7.1.min.js")
+        script(src="/jolin/js/custom.js")
+        script(src="/jolin/js/lightbox.js")
+        script(src="/jolin/js/input_check.js")
+        script(src="/jolin/js/input.js")
+        script(src="/jolin/js/common_base.js")
+        script(src="/jolin/js/common_card.js")
+        script(src="/jolin/js/common_reg.js")
+        script(src="/jolin/js/main.js")

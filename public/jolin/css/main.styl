@@ -1,0 +1,348 @@
+$path        = "/jolin/img/"
+$bg          = $path"bg.jpg"
+$main        = $path"main.jpg"
+$btn         = $path"btn.jpg"
+$run_game    = $path'run_game.jpg'
+$msg_bg      = $path'msg_bg.png'
+$reg_scroll  = $path'reg_scroll.jpg'
+$reg_bg      = $path'reg_bg.jpg'
+$reg_btn     = $path'reg_btn.jpg'
+$right_wrong = $path'right_wrong.png'
+$loader      = $path'ajax-loader.gif'
+$success     = $path'success.png'
+$fail        = $path'fail.png'
+$loading     = $path'loading.gif'
+$gdj         = $path'gdj.jpg'
+$jws         = $path'jws.jpg'
+$qxs         = $path'qxs.jpg'
+$ynz         = $path'ynz.jpg'
+$syyx        = $path'syyx.png'
+
+body
+    margin 0
+    font 12px/2em "宋体"
+    color #A7A7A9
+    background #1C180F
+a
+    text-decoration none
+    color #A4E1FD
+    outline none
+    &:hover
+        color #fff
+img
+    border none
+.container    
+    position relative
+    background url($bg) no-repeat center top 
+    min-width 980px
+.wrap
+    background url($main) no-repeat center 480px 
+    position relative
+    min-width 980px
+.main
+    width 980px
+    margin 0 auto
+    height 1350px
+    position relative
+.nav
+    color #A4E1FD
+    float right
+    line-height 35px
+    padding-right 50px
+.logo
+    position absolute
+    width 187px
+    height 86px
+    right 10px
+    top 40px
+    text-indent -9999cm
+#prize
+    position absolute
+    width 284px
+    height 55px
+    left 20px
+    top 390px
+#flash, #flash_but, #flash_btn
+    width 186px
+    height 105px
+    position absolute
+    top 340px
+    left 433px
+#flash_btn
+    background url($btn) no-repeat 999cm
+    cursor pointer
+#rungame_v,#rungame_v2,a.rungame_1
+    width 221px
+    height 72px
+    position absolute
+    left 708px
+    top 396px
+#rungame_v2
+    visibility hidden
+a.rungame_1
+    background url($btn) no-repeat 999cm
+.reg_panel
+    width 300px
+    left 670px
+    top 570px
+    overflow hidden
+    position absolute
+    height 260px
+    color #82D1E0
+    .reg
+        padding 0 20px 0 25px
+        height 260px
+    table
+        height 162px
+        td
+            height 28px
+            width 20px
+        input
+            background #85bbe5
+            border 1px solid #009cff
+            height 18px
+            color #002c7a
+            line-height 18px
+            width 170px
+        .focus_in_inut
+            background #cce9ff
+    .agreement
+        height 21px
+    .reg_form_item_name
+        width 60px
+    .reg_form_item_input
+        width 175px
+    .validate_num_input
+        height 30px
+        vertical-align top
+        padding-top 3px
+    #txtValidate
+        width 60px
+    #validateimg
+        width 100px
+        margin-left 5px
+        height 27px
+        vertical-align top
+        cursor pointer
+    #reg_step2,#reg_step3,#reg_step4,#reg_step5
+        width 260px
+        margin 0 auto
+        padding-top 30px
+        display none
+        line-height 30px
+        height 150px
+        text-align center
+        input
+            background #85bbe5
+            border 1px solid #009cff
+            height 18px
+            color #002c7a
+            line-height 18px
+            width 170px
+    #reg_step2
+        height 241px
+        .active
+            height 200px
+            line-height 30px
+    #active_link
+        display block
+        margin 20px auto
+        width 159px
+        height 38px
+        background url($btn) no-repeat -393px -8px
+        &:hover
+            background-position -556px -8px
+    .rungame_bg
+        height 50px
+        width 266px
+        margin 0 auto
+        .rungame
+            display block 
+            width 159px
+            height 38px
+            background url($btn) -556px -95px
+            margin 0 auto
+            &:hover
+                background-position -393px -94px
+    .reg_submit
+        height 55px
+        position relative
+    #reg_button
+        width 159px
+        height 38px
+        position absolute
+        left 51px
+        top 7px
+        background url($btn) no-repeat -556px -137px
+        &:hover
+            background-position -392px -136px
+    .success
+        font-size 16px
+        height 50px
+        padding-left 40px
+        line-height 50px
+        background url($success) no-repeat left center
+        color #eee
+        display inline-block
+        font-weight 700
+    .fail
+        font-size 16px
+        height 50px
+        padding-left 40px
+        line-height 50px
+        text-align left
+        background url($fail) no-repeat left center
+        color #eee
+        margin-left 50px
+        font-weight 700
+    #back
+        text-decoration underline
+        cursor pointer
+        margin-top 20px
+    .check_result_wrong
+        background url($right_wrong) no-repeat 0 -32px
+        height 100%
+        width 16px
+    .check_result_right 
+        background: url($right_wrong) no-repeat 0 4px
+        height: 25px;
+        width: 16px;
+
+    .check_result_loading 
+        background url($loader) no-repeat 0 4px
+        height 25px
+        width 16px
+#job
+    position absolute
+    top 858px
+    left 0
+    width 655px
+    height 332px
+    color #A7A7A5
+    #j_tab
+        height 55px
+        position absolute
+        width 372px
+        left 190px
+        top 5px
+        background url($btn) no-repeat -11px -8px
+        span
+            display inline-block
+            width 93px
+            float left
+            background url($btn) no-repeat 9999cm
+            height 100%
+            cursor pointer
+        .check_0
+            background-position -11px -67px
+        .check_1
+            background-position -105px -67px
+        .check_2
+            background-position -198px -67px
+        .check_3
+            background-position -291px -67px
+    #j_con
+        height 273px
+        width 100%
+        top 61px
+        position absolute
+        overflow hidden
+        line-height 25px
+        .con
+            width 100%
+            height 100%
+            position absolute
+            top 0
+            display none
+        .jws
+            background url($jws) no-repeat -4px top
+        .qxs
+            background url($qxs) no-repeat -4px top
+        .ynz
+            background url($ynz) no-repeat -4px top
+        .gdj
+            background url($gdj) no-repeat -4px top
+        strong,span
+            color #73BBC9
+        .feat
+            width 160px
+            position absolute
+            top 74px
+            left 490px
+            line-height 24px
+        .feat2
+            position absolute
+            left 240px
+            top 180px
+        .video
+            width 238px
+            height 134px
+            position absolute
+            top 30px
+            left 227px
+            background #000
+            overflow hidden
+            border 1px solid #079DDA
+    #to_reg_3
+        width 149px
+        height 38px
+        background url($btn) no-repeat -556px -52px
+        position absolute
+        top 250px
+        right 30px
+        cursor pointer
+        &:hover
+            background-position -398px -52px
+
+#img_scroll
+    width 263px
+    height 215px
+    position absolute
+    top 935px
+    right 27px
+    .button
+        width 14px
+        height 62px
+        float left
+        cursor pointer
+        margin-top 75px
+    .scroll_box
+        overflow hidden
+        width 235px
+        text-align center
+        float left
+        height 100%
+        #scroll_body
+            width 1410px
+        a
+            width 235px
+            float left
+            display block
+            height 215px
+            background url($loading) no-repeat center
+        img
+            display none
+.copy_right
+    width 700px
+    position absolute
+    top 1233px
+    line-height 23px
+    padding-left 240px
+    .feet_logo
+        position absolute
+        width 162px
+        height 66px
+        left 80px
+        top -7px
+        background url($syyx) no-repeat
+.pop_video_detail
+    background-color: #032e53;
+    border 1px solid #0062b3
+#pop_flash
+    border 1px solid #004680
+    background #000
+    line-height 0
+object
+    outline none
+.disnone
+    display none
