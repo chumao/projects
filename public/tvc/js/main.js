@@ -1,10 +1,13 @@
 $(document).ready(function(){
     $("#shuguang_main").show()
+
     $("#daoyan_main,#chuangyi_main,#zhizuo_main").hide()
+
     $("#daoyan_1,#daoyan_2,#daoyan_3,#daoyan_4,#chuangyi_1,#zhizuo_1,#zhizuo_2,#zhizuo_3,#zhizuo_4").lightBox();
 
     $("#flash_btn_sg").click(function(event) {
         $("body").append('<div id="pop_flash_dialog_sg"><div id="pop_flash_sg"></div></div>')
+        
         getjwplayer('http://v.nycs.syyx.com/nycs/flv/TVCpre_640x355_20121001.flv', 640, 355, "#pop_flash_sg") 
         $("#pop_flash_dialog_sg").dialog({
             width       : 656,
@@ -18,6 +21,7 @@ $(document).ready(function(){
         });
         event.preventDefault()
     })
+
     $("#shuguang").click(function(event){
         $("#shuguang_main").css("display","block")
         $("#daoyan_main").css("display","none")
