@@ -37,7 +37,7 @@ a:link {
     color: #404040;
 }
 a:visited {
-    color: #aaa;
+    color: #404040;
     text-decoration: none;
 }
 a:hover {
@@ -48,24 +48,33 @@ a:hover {
     margin: 0px auto;
     width: 1000px;
     position: relative;
-    height: 550px;
+}
+.nav {
+    height: 110px;
+    position: relative;
 }
 #logo1 {
     padding: 10px 0px;
+    position: absolute;
 }
 #nav_1 {
     width: 600px;
     position: absolute;
-    right: -10px;
+    /*right: -10px;*/
+    right: 0;
     top: 22px;
     padding-top:10px;
     margin-top: 14px;
 }
+.bg-group {
+    background: url(/service/img/bgd.png) no-repeat 0px 0px;
+}
+
 .bgstyle_nav1 {
     display: block;
     width: 110px;
     height: 36px;
-    background: url(/service/img/bgd.png) no-repeat 0px -15px;
+    background-position:  0px -15px;
     border-right: 1px solid #ccc;
     left: 0px;
     top: 0px;
@@ -75,7 +84,7 @@ a:hover {
     display: block;
     width: 110px;
     height: 36px;
-    background: url(/service/img/bgd.png) no-repeat -124px -15px;
+    background-position: -124px -15px;
     border-right: 1px solid #ccc;
     left: 120px;
     top: 0px;
@@ -85,7 +94,7 @@ a:hover {
     display: block;
     width: 110px;
     height: 36px;
-    background: url(/service/img/bgd.png) no-repeat -248px -15px;
+    background-position: -248px -15px;
     border-right: 1px solid #ccc;
     left: 240px;
     top: 0px;
@@ -95,7 +104,7 @@ a:hover {
     display: block;
     width: 110px;
     height: 36px;
-    background: url(/service/img/bgd.png) no-repeat -370px -15px;
+    background-position:  -370px -15px;
     border-right: 1px solid #ccc;
     left: 360px;
     top: 0px;
@@ -105,30 +114,28 @@ a:hover {
     display: block;
     width: 110px;
     height: 36px;
-    background: url(/service/img/bgd.png) no-repeat -494px -15px;
+    background-position:  -494px -15px;
     left: 480px;
     top: 0px;
     position: absolute;
 }
-a.bgstyle_nav1:hover {
-    background: url(/service/img/bgd.png) no-repeat 0px -45px;
+a.bgstyle_nav1:hover, a.bgstyle_nav1_selected {
+    background-position:  0px -45px;
 }
 a.bgstyle_nav2:hover {
-    background: url(/service/img/bgd.png) no-repeat -124px -45px;
+    background-position:  -124px -45px;
 }
 a.bgstyle_nav3:hover {
-    background: url(/service/img/bgd.png) no-repeat -248px -45px;
+    background-position: -248px -45px;
 }
 a.bgstyle_nav4:hover {
-    background: url(/service/img/bgd.png) no-repeat -370px -45px;
+    background-position:  -370px -45px;
 }
 a.bgstyle_nav5:hover {
-    background: url(/service/img/bgd.png) no-repeat -494px -45px;
+    background-position: -494px -45px;
 }
-header {
+.header {
     height: 267px;
-    width: 600px;
-    float: right;
     position: relative;
 }
 #seek1 {
@@ -136,7 +143,7 @@ header {
     height: 79px;
     background: url(/service/img/bgd.png) no-repeat -5px -85px;
     position: absolute;
-    right: -20px;
+    right: 0px;
     top: 87px;
 }
 .skbox1 {
@@ -146,12 +153,14 @@ header {
     top: 22px;
     position: absolute;
     border: none;
+    line-height: 34px;
+    padding-left: 3px;
 }
 .bgstyle_head1 {
     display: block;
     width: 112px;
     height: 41px;
-    background: url(/service/img/bgd.png) no-repeat -8px -178px;
+    background-position: -8px -178px;
     right: 138px;
     bottom: 15px;
     position: absolute;
@@ -160,16 +169,16 @@ header {
     display: block;
     width: 112px;
     height: 41px;
-    background: url(/service/img/bgd.png) no-repeat -141px -177px;
+    background-position: -141px -177px;
     right: 26px;
     bottom: 15px;
     position: absolute;
 }
 a.bgstyle_head1:hover {
-    background: url(/service/img/bgd.png) no-repeat -282px -178px;
+    background-position: -282px -178px;
 }
 a.bgstyle_head2:hover {
-    background: url(/service/img/bgd.png) no-repeat -428px -179px;
+    background-position: -428px -179px;
 }
 #notice1 {
     color: #fff;
@@ -191,10 +200,9 @@ a.bgstyle_head2:hover {
     right: 8px;
     top: 14px;
 }
-section {
-    top: 268px;
+.section {
     position: relative;
-    height: 300px;
+    height: 320px;
 }
 #section1 {
     border-right: 1px solid #ccc;
@@ -204,10 +212,14 @@ section {
     top: 40px;
     left: 0px;
 }
+.question_icon {
+    background: url(/service/img/bgd.png) no-repeat 0 0;
+}
+
 .bgstyle_st1 {
     width: 240px;
     height: 190px;
-    background: url(/service/img/bgd.png) no-repeat 12px -220px;
+    background-position:  12px -220px;
     position: absolute;
 }
 .st1_font1 {
@@ -216,8 +228,10 @@ section {
     position: relative;
     top: 200px;
     border-right: 1px #000 solid;
-    padding-left: 20px;
-    padding-right: 10px;
+    padding:0 9px;
+}
+.no-border {
+    border: none;
 }
 .st1_font2 {
     font-size: 1.1em;
@@ -225,19 +239,7 @@ section {
     position: relative;
     height: 20px;
     top: 200px;
-}
-.st1_font3 {
-    font-size: 1.1em;
-    display: line-block;
-    position: relative;
-    padding-left: 10px;
-    height: 20px;
-    top: 200px;
-    border-left: 1px #000 solid;
-}
-.st1_font4 {
-    text-align: center;
-    color: #404040;
+    padding-left: 40px;
 }
 #section2 {
     border-right: 1px solid #ccc;
@@ -250,7 +252,7 @@ section {
 .bgstyle_st2 {
     width: 240px;
     height: 190px;
-    background: url(/service/img/bgd.png) no-repeat -240px -220px;
+    background-position: -240px -220px;
     position: absolute;
 }
 #section3 {
@@ -264,7 +266,7 @@ section {
 .bgstyle_st3 {
     width: 240px;
     height: 190px;
-    background: url(/service/img/bgd.png) no-repeat -524px -220px;
+    background-position: -524px -220px;
     position: absolute;
 }
 #section4 {
@@ -277,40 +279,46 @@ section {
 .bgstyle_st4 {
     width: 240px;
     height: 190px;
-    background: url(/service/img/bgd.png) no-repeat -794px -220px;
+    background-position: -794px -220px;
     position: absolute;
 }
 a.bgstyle_st1:hover {
-    background: url(/service/img/bgd.png) no-repeat 10px -438px;
+    background-position: 10px -438px;
 }
 a.bgstyle_st2:hover {
-    background: url(/service/img/bgd.png) no-repeat -242px -438px;
+    background-position: -242px -438px;
 }
 a.bgstyle_st3:hover {
-    background: url(/service/img/bgd.png) no-repeat -526px -438px;
+    background-position: -526px -438px;
 }
 a.bgstyle_st4:hover {
-    background: url(/service/img/bgd.png) no-repeat -796px -438px;
+    background-position: -796px -438px;
 }
 #main_kf {
     border-top: #999 1px dotted;
-    top: 300px;
     position: relative;
-    height: 200px;
-    margin: 0px auto;   
+    height: 150px;
+    margin: 0px auto;  
+    padding: 30px 0; 
 }
 #content_kf {
-    width: 600px;
     position: relative;
     padding-left: 240px;
     padding-top: 18px;
 }
 .style_ul_kf {
     padding-left: 5px;
-    width: 170px;
     position: relative;
     float: left; 
+    margin-right: 40px;
 }
+.style_ul_kf li {
+    font-size: 1.1em;
+    line-height: 38px;
+    color: #999;
+    padding: 0px;
+}
+
 .style_ul_kf1 {
     padding-left: 50px;
     width: 170px;
@@ -323,13 +331,7 @@ a.bgstyle_st4:hover {
     position: relative;
     float: left;
 }
-.style_li_kf {
-    font-size: 1.1em;
-    line-height: 38px;
-    color: #999;
-    padding: 0px;
-}
-footer {
+.footer {
     background: #ccc;
     color: #666;
     line-height: 1.6em;
@@ -337,7 +339,6 @@ footer {
     text-align: center;
     overflow: hidden;
     position: relative;
-    top: 300px;
 }
 .style_footer1 {
     padding: 18px;

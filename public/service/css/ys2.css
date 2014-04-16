@@ -5,11 +5,11 @@
     display: none;
 }
 #main_qs {
-    background: url(/service/img/qs1.jpg) no-repeat 0px 0px;
-    position: relative;
-    top: 290px;
+    padding-top: 30px;
+    background: url(/service/img/qs1.jpg) no-repeat 0px 30px;
     border-bottom: 1px #ccc solid;
     height: 27px;
+    position: relative;
 }
 .style_font_qs {
     display: line-block;
@@ -30,14 +30,18 @@
     width: 470px;
     height: 46px;
     position: relative;
-    top: 324px;
     margin: 0px auto;
+    padding: 60px 0;
 }
+.btn-group-2 {
+    background: url(/service/img/qs2_2.jpg) no-repeat 0px 0px;
+}
+
 .bgstyle_qs_1 {
     display: block;
     width: 156px;
     height: 46px;
-    background: url(/service/img/qs2_2.jpg) no-repeat 0px 0px;
+    background-position: 0px 0px;
     position: absolute;
     left: 0px;
 }
@@ -45,7 +49,7 @@
     display: block;
     width: 156px;
     height: 46px;
-    background: url(/service/img/qs2_2.jpg) no-repeat -158px 0px;
+    background-position: -158px 0px;
     position: absolute;
     left: 158px;
 }
@@ -53,18 +57,18 @@
     display: block;
     width: 156px;
     height: 46px;
-    background: url(/service/img/qs2_2.jpg) no-repeat -313px 0px;
+    background-position: -313px 0px;
     position: absolute;
     right: 0px;
 }
 a.bgstyle_qs_1:hover {
-    background: url(/service/img/qs2.jpg) no-repeat -1px 1px;
+    background-position: -1px -57px;
 }
 a.bgstyle_qs_2:hover {
-    background: url(/service/img/qs2.jpg) no-repeat -159px 1px;
+    background-position: -159px -57px;
 }
 a.bgstyle_qs_3:hover {
-    background: url(/service/img/qs2.jpg) no-repeat -314px 1px;
+    background-position:-314px -57px;
 }
 #container2 {
     width: 820px;
@@ -100,6 +104,18 @@ a.bgstyle_qs_3:hover {
     border-bottom: none;
 }
 .content_nav_2 {
+    display: inline-block;
+    border: #888 2px solid;
+    padding: 7px 17px;
+    border-bottom: none;
+}
+.content_nav_3 {
+     display: inline-block;
+    border: #888 2px solid;
+    padding: 7px 10px;
+    border-bottom: none;
+}
+.content_nav_4 {
     display: inline-block;
     border: #888 2px solid;
     padding: 7px 17px;
@@ -143,23 +159,6 @@ a.bgstyle_qs_3:hover {
     padding: 0px 5px;
     font-size: 0.9em;
 }
-.content_nav_3 {
-    display: line-block;
-    border-top: #2089cf 2px solid;
-    border-left: #2089cf 2px solid;
-    border-right: #2089cf 2px solid;
-    border-bottom: #fff 2px solid;
-    padding: 7px 10px;
-}
-.content_nav_4 {
-    display: line-block;
-    border-top: #2089cf 2px solid;
-    border-left: #2089cf 2px solid;
-    border-right: #2089cf 2px solid;
-    border-bottom: #fff 2px solid;
-    padding: 7px 17px;
-}
-
 .selected {
     border: solid 2px #2089cf;
     border-bottom: solid 2px #fff;
