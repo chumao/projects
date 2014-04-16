@@ -37,7 +37,7 @@ a:link {
     color: #404040;
 }
 a:visited {
-    color: #aaa;
+    color: #404040;
     text-decoration: none;
 }
 a:hover {
@@ -110,7 +110,7 @@ a:hover {
     top: 0px;
     position: absolute;
 }
-a.bgstyle_nav1:hover {
+a.bgstyle_nav1:hover, a.bgstyle_nav1_selected {
     background: url(/service/img/bgd.png) no-repeat 0px -45px;
 }
 a.bgstyle_nav2:hover {
@@ -204,10 +204,14 @@ section {
     top: 40px;
     left: 0px;
 }
+.question_icon {
+    background: url(/service/img/bgd.png) no-repeat 0 0;
+}
+
 .bgstyle_st1 {
     width: 240px;
     height: 190px;
-    background: url(/service/img/bgd.png) no-repeat 12px -220px;
+    background-position:  12px -220px;
     position: absolute;
 }
 .st1_font1 {
@@ -250,7 +254,7 @@ section {
 .bgstyle_st2 {
     width: 240px;
     height: 190px;
-    background: url(/service/img/bgd.png) no-repeat -240px -220px;
+    background-position: -240px -220px;
     position: absolute;
 }
 #section3 {
@@ -264,7 +268,7 @@ section {
 .bgstyle_st3 {
     width: 240px;
     height: 190px;
-    background: url(/service/img/bgd.png) no-repeat -524px -220px;
+    background-position: -524px -220px;
     position: absolute;
 }
 #section4 {
@@ -277,20 +281,20 @@ section {
 .bgstyle_st4 {
     width: 240px;
     height: 190px;
-    background: url(/service/img/bgd.png) no-repeat -794px -220px;
+    background-position: -794px -220px;
     position: absolute;
 }
 a.bgstyle_st1:hover {
-    background: url(/service/img/bgd.png) no-repeat 10px -438px;
+    background-position: 10px -438px;
 }
 a.bgstyle_st2:hover {
-    background: url(/service/img/bgd.png) no-repeat -242px -438px;
+    background-position: -242px -438px;
 }
 a.bgstyle_st3:hover {
-    background: url(/service/img/bgd.png) no-repeat -526px -438px;
+    background-position: -526px -438px;
 }
 a.bgstyle_st4:hover {
-    background: url(/service/img/bgd.png) no-repeat -796px -438px;
+    background-position: -796px -438px;
 }
 #main_kf {
     border-top: #999 1px dotted;

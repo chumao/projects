@@ -105,6 +105,18 @@ a.bgstyle_qs_3:hover {
     padding: 7px 17px;
     border-bottom: none;
 }
+.content_nav_3 {
+     display: inline-block;
+    border: #888 2px solid;
+    padding: 7px 10px;
+    border-bottom: none;
+}
+.content_nav_4 {
+    display: inline-block;
+    border: #888 2px solid;
+    padding: 7px 17px;
+    border-bottom: none;
+}
 #content_ct_q1 {
     padding-top: 40px;
     border-top: 2px #2089cf solid;
@@ -143,23 +155,6 @@ a.bgstyle_qs_3:hover {
     padding: 0px 5px;
     font-size: 0.9em;
 }
-.content_nav_3 {
-    display: line-block;
-    border-top: #2089cf 2px solid;
-    border-left: #2089cf 2px solid;
-    border-right: #2089cf 2px solid;
-    border-bottom: #fff 2px solid;
-    padding: 7px 10px;
-}
-.content_nav_4 {
-    display: line-block;
-    border-top: #2089cf 2px solid;
-    border-left: #2089cf 2px solid;
-    border-right: #2089cf 2px solid;
-    border-bottom: #fff 2px solid;
-    padding: 7px 17px;
-}
-
 .selected {
     border: solid 2px #2089cf;
     border-bottom: solid 2px #fff;
