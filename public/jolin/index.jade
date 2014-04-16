@@ -32,35 +32,30 @@ html
                                 tr
                                     td.reg_form_item_name 账    号：
                                     td.reg_form_item_input
-                                        input#txtUserAccount(type="text", maxlength="16")
+                                        input(type="text", maxlength="16")
                                     td
-                                        #txtUserAccountTip
                                 tr
                                     td.reg_form_item_name 密    码：
                                     td.reg_form_item_input
-                                        input#txtPasswords(type="password", maxlength="16")
-                                        input#txtPasswordsVal.disnone(type="text")
+                                        input(type="password", maxlength="16")
+                                        input.disnone(type="text")
                                     td
-                                        #txtPasswordsTip
                                 tr
                                     td.reg_form_item_name 重复密码：
                                     td.reg_form_item_input
-                                        input#txtConfirm(type="password")
-                                        input#txtConfirmVal.disnone(type="text")
+                                        input(type="password")
+                                        input.disnone(type="text")
                                     td
-                                        #txtConfirmTip
                                 tr
                                     td.reg_form_item_name 真实姓名：
                                     td.reg_form_item_input
-                                        input#txtTrueName(type="text", maxlength="20")
+                                        input(type="text", maxlength="20")
                                     td
-                                        #txtTrueNameTip
                                 tr
                                     td.reg_form_item_name 身 份 证：
                                     td.reg_form_item_input
-                                        input#txtCardID(type="text", maxlength="18")
+                                        input(type="text", maxlength="18")
                                     td
-                                        #txtCardIDTip
                             .agreement
                                 input#chk_XieYi(type="checkbox", checked="")
                                 | 同意
@@ -68,7 +63,6 @@ html
                                     | 《使用协议及隐私协议》
                             .reg_submit
                                 a#reg_button(href="#", hidefocus="true")
-                                span#regProcessTip
                     #job
                         #j_con
                             .jws.con(style="display:block")
