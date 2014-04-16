@@ -25,5 +25,19 @@ $(document).ready(function(){
             alert('提交成功')
         }
     })
-
+    var default_text = "描述你的问题，比如“忘记密码”";
+    
+    $('.skbox1').focus(function (event) {
+        var value_text2 = $('.skbox1').val()
+        if (value_text2 === default_text) {
+            $(".skbox1").val("");
+        }
+        
+    })
+    $('.skbox1').blur(function (event) {
+        var value_text1 = $('.skbox1').val()
+        if (value_text1 === "") {
+            $(".skbox1").val(default_text);
+        }   
+    })
 });
