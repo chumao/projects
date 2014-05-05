@@ -38,12 +38,6 @@ $(function() {
         event.preventDefault()
     })
 
-    $("#to_reg_3").click(function(event) {
-        $("html").animate({ scrollTop: 574 }, "normal")
-        $("body").animate({ scrollTop: 574 }, "normal")
-        $("#txtUserAccount").select()
-        event.preventDefault()
-    })
 
     switch_job()
 
