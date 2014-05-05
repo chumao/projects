@@ -12,23 +12,23 @@
                 <a href="#" class="logo_a_1" title="logo"></a>
                 <div id="header">
                     <div id="content_header">
-                        <h2>Giveaway - Get the keycode now!</h2>
+                        <h1>Giveaway - Get the keycode now!</h1>
                         <p class="style_text_color">Enter your email and name to get the free keycode now!</p>
-                        <form action="" method="post" class="style_form_1">
+                        <form id="reg_form" action="" method="post" class="style_form_1">
                             <label for="email" class="style_text_color_1">Email:</label>
-                            <input type="text" name="email"><br/>
+                            <input type="text" name="email" data-message="please input your Email Address"><br/>
                             <label for="first_name" class="style_text_color_1">First Name:</label>
-                            <input type="text" name="first_name"><br/>
+                            <input type="text" name="first_name" data-message="please input your First Name"><br/>
                             <label for="last_name" class="style_text_color_1">Last Name:</label>
-                            <input type="text" name="last_name"><br/>
-                            <a href="#" class="header_a_1" title="get keycode now"></a>
+                            <input type="text" name="last_name" data-message="please input your Last Name"><br/>
+                            <button type="submit" class="header_a_1" title="get keycode now"></button>
                         </form>
                     </div>
                     <div id="content_1_header">
-                        <ol class="style_text_color">
-                            <li>You have to install and activate it (please connect to internet to register) before the Giveaway offer for the software is over.</li>
-                            <li>No free upgrades to future versions and technical suppory (lncludes offline registration) will be provided for Giveaway Products.</li>
-                        </ol>
+                        <ul class="note">
+                            <li>1.You have to install and activate it (please connect to internet to register) before the Giveaway offer for the software is over.</li>
+                            <li>2.No free upgrades to future versions and technical suppory (lncludes offline registration) will be provided for Giveaway Products.</li>
+                        </ul>
                     </div>
                 </div>
                 <div id="main_1">
@@ -47,27 +47,33 @@
                 </div>
                 <div id="main_3">
                     <div id="main_3_1">
-                        <h3 class="main_3_h3">Leawo Blu-ray Ripper<a href=""><img src="img/gw_18.jpg" class="main_3_a1"></a><a href=""><img src="img/gw_15.jpg" alt=""></a></h3>
-                        <img src="img/gw_23.jpg">
+                        <h3 class="main_3_h3">Leawo Blu-ray Ripper<span class="icon icon-both-osx-windows gap-left-10"></span></h3>
+                        <img class="product-img" src="img/gw_23.jpg" alt="Leawo Blu-ray Ripper">
                         <p class="main_3_p">Provide excellent solutions for ultra DVD and video enjoyment with powerful video editing features and many user-friendly options</p>
                         <span class="main3_style_1">$164.85</span><span class="main3_style_2">$99.95</span>
-                        <a href="#" class="main_3_a2"></a>
-                        <a href="#" class="main_3_a3"></a>
+                        <div class="buy-btn-group">
+                            <a href="#" class="btn buy-windows-btn"></a>
+                            <a href="#" class="btn buy-osx-btn"></a>
+                        </div>
                     </div>
                     <div id="main_3_2">
-                        <h3 class="main_3_h3">Leawo Blu-ray Copy<a href=""><img src="img/gw_18.jpg" class="main_3_a1"></a><a href=""><img src="img/gw_15.jpg"></a></h3>
-                        <img src="img/gw_26.jpg">
+                        <h3 class="main_3_h3">Leawo Blu-ray Copy<span class="icon icon-both-osx-windows gap-left-10"></span></h3>
+                        <img class="product-img" src="img/gw_26.jpg" alt="Leawo Blu-ray Copy">
                         <p class="main_3_p">Provide excellent solutions for ultra DVD and video enjoyment with powerful video editing features and many user-friendly options</p>
                         <span class="main3_style_1">$164.85</span><span class="main3_style_2">$99.95</span>
-                        <a href="#" class="main_3_a2"></a>
-                        <a href="#" class="main_3_a3"></a>
+                        <div class="buy-btn-group">
+                            <a href="#" class="btn buy-windows-btn"></a>
+                            <a href="#" class="btn buy-osx-btn"></a>
+                        </div>
                     </div>
                     <div id="main_3_3">
-                        <h3 class="main_3_h3">Leawo Blu-ray Prayer<a href=""><img src="img/gw_18.jpg" class="main_3_a1"></a></h3>
-                        <img src="img/gw_28.jpg">
+                        <h3 class="main_3_h3">Leawo Blu-ray Prayer<span class="icon icon-windows gap-left-10"></span></h3>
+                        <img class="product-img" src="img/gw_28.jpg" alt="Leawo Blu-ray Prayer">
                         <p class="main_3_p">Provide excellent solutions for ultra DVD and video enjoyment with powerful video editing features and many user-friendly options</p>
                         <span class="main3_style_1">$164.85</span><span class="main3_style_2">$99.95</span>
-                        <a href="#" class="main_3_a2"></a>
+                        <div class="buy-btn-group">
+                            <a href="#" class="btn buy-windows-btn"></a>
+                        </div>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -77,5 +83,7 @@
             <a href="#" class="footer_a1">Home</a><a href="#" class="footer_a1">Privacy Policy</a><a href="#" class="footer_a1">Terms of Use</a><a href="#" class="footer_a1">About</a><a href="#" class="footer_a1">Friendlink</a><a href="#" class="footer_a1">Partner</a><a href="#" class="footer_a1">Affiliate</a><a href="#" class="footer_a2">Software Store</a>
             <p>Copyright @ 2006 - 2011 Leawo Software Co. Ltd.all Rights Reserved.</p>
         </div>
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
