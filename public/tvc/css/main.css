@@ -40,7 +40,7 @@ body {
 }
 .nav a {
   color: #c182fc;
-  margin: 5px;
+  padding: 5px;
   font-size: 13px;
   text-decoration: none;
 }
@@ -91,7 +91,7 @@ body {
 .pop_video_detail,
 .pop_video_detail_sg {
   background: #54200a;
-  border: 1px solid #873410;
+  border: 5px solid #873410;
 }
 #pop_flash,
 #pop_flash_sg {

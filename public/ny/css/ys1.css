@@ -1,0 +1,110 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    background: url(/ny/img/bg.jpg) no-repeat 0 0;
+    font-size: small;
+}
+a:link {
+    text-decoration: none;
+    color: #39c;
+}
+a:visited {
+    color: #39c;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+#container {
+    width: 1050px;
+    height: 2000px;
+    margin: 0px auto;
+    border: 1px #000 solid;
+}
+#container1 {
+    height: 526px;
+    position: relative;
+    border: 1px #39c solid;
+}
+#nav {
+    background: url(/ny/img/logo.jpg) no-repeat 260px 0px;
+    height: 80px;
+    margin-left: 500px; 
+    font-size: 0.9em;
+}
+.style_bd1_1 {
+    border-right: 1px #39c solid;
+    display: inline-block;
+    padding: 0 6px 0 0px;
+}
+#nav_a {
+    left: 70px;
+    top: 10px;
+    position: relative;
+}
+.style_bd2_1 {
+    display: inline-block;
+    padding: 40px;
+    position: relative;
+    left: 280px;
+}
+.style_bd2_2 {
+    display: inline-block;
+    padding: 40px;
+    position: relative;
+    left: 350px;
+}
+#m15 {
+    width: 182px;
+    height: 38px;
+    position: absolute;
+    right: 60px;
+    bottom: 120px;
+    background: url(/ny/img/xiazai1.jpg) no-repeat 0px -2px;
+}
+#m15 a {
+    display: inline-block;
+    padding: 12px 80px;
+}
+#prize {
+    position: absolute;
+    bottom: 45px;
+    left: 490px;
+    height: 207px;
+}
+.style_prize_1 {
+    position: relative;
+    top: -90px;
+}
+.style_prize_2 {
+    position: relative;
+    top: -90px;
+}
