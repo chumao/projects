@@ -43,6 +43,10 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+input:focus {
+    outline: none;
+}
+/* helper */
 a {
     text-decoration: none;
     color: #fff;
@@ -52,9 +56,16 @@ a:hover {
     text-decoration: underline;
 }
 
-.clearfix {
+/*.clearfix {
     height: 0;
     overflow: hidden;
+    clear: both;
+}*/
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
     clear: both;
 }
 .pull-left {
@@ -62,9 +73,6 @@ a:hover {
 }
 .pull-right {
     float: right;
-}
-.hide-text {
-    text-indent: -9999px;
 }
 .text-center {
     text-align: center;
@@ -98,7 +106,6 @@ a:hover {
     height: 26px;
     background-position: -4px 0;
 }
-
 .icon-osx {
     width: 26px;
     height: 26px;
@@ -151,6 +158,77 @@ body {
     line-height: 22px;
     font-size: 12px;
 }
+.reg {
+    position: absolute;
+    width: 258px;
+    height: 294px;
+    overflow: hidden;
+    right: 170px;
+    top:132px;
+    padding: 30px 40px;
+}
+.reg h3 {
+    color: #CC0001;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.reg p {
+    font-size: 12px;
+    color: #286196;
+    line-height: 18px;
+    padding-bottom: 20px;
+}
+#reg_form {
+    padding: 0 10px; 
+}
+#reg_form label {
+    font-weight: bold;
+    color: #286196;
+    display: block;
+    margin-bottom: 3px;
+}
+.form-control {
+    padding-bottom: 15px;
+}
+.custom-input {
+    height: 18px;
+    background: url("../img/input-bg.png") 0 0 repeat-x;
+    position: relative;
+    padding: 3px 4px 4px 4px; 
+}
+.left-radius {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 4px;
+    height: 25px;
+    background: url("../img/input-radius.png") left top no-repeat;
+}
+.right-radius {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4px;
+    height: 25px;
+    background: url("../img/input-radius.png") right top no-repeat;
+}
+.custom-input input {
+    border: none;
+    height: 18px;
+    line-height: 18px;
+    width: 100%;
+    background: none;
+}
+.submit-reg-btn {
+    border: none;
+    background-position: -1px -66px;
+    width: 195px;
+    height: 31px;
+    display: block;
+    margin:0 auto;
+    cursor: pointer;
+}
 .products {
     padding: 30px 100px;
 }
@@ -171,6 +249,7 @@ body {
     height: 50px;
     top:129px;
     left:20px;
+    _background: url(about:blank);
 }
 .promotion2 a {
     position: absolute;
@@ -178,9 +257,11 @@ body {
     height: 50px;
     top:129px;
     left:159px;
+    _background: url(about:blank);
 }
 .special-offer {
     padding: 30px 20px 20px 20px;
+    clear: both;
 }
 .special-offer-title {
     color: #CD0000;
@@ -190,13 +271,14 @@ body {
     font-size: 20px;
     margin-bottom:40px;
 }
-.special-offer-list{
-}
 .special-offer-item {
     padding-right: 30px;
     margin-right: 30px;     
     width: 245px;
     border-right: solid 2px #E8CAC2;
+}
+.special-offer-list {
+    overflow: hidden;
 }
 .special-offer-list .last {
     padding-right: 0;
@@ -251,15 +333,20 @@ body {
     margin: 0 auto;
     padding-top: 20px;
 }
-.foot-content a {
+.foot-content ul {
+    padding-left: 250px;
+    height: 20px;
+    overflow: hidden;
+}
+.foot-content li {
     border-right: solid 1px #fff;
-    display: inline-block;
+    float:left;
     height: 14px;
     line-height: 14px; 
     margin: 0 10px 0 0;
     padding-right: 10px;
 }
-.foot-content a.last {
+.foot-content .last {
     border: none;
     padding: 0;
 }

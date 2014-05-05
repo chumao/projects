@@ -8,71 +8,100 @@ html
     body
         .container
             .content
-                a.logo.hide-text(href="", title="logo") logo
+                a.logo.hide-text(href="#", title="logo") logo
+                .reg
+                    h3 Giveaway - Get the keycode now!
+                    p Enter your email and name to get the free keycode now!
+                    form#reg_form(action="#", method="post")
+                        .form-control
+                            label(for="email") Email
+                            .custom-input
+                                span.left-radius
+                                span.right-radius
+                                input(type="text", name="email", data-message="please input your Email Address")
+                        .form-control
+                            label(for="first_name") First Name
+                            .custom-input
+                                span.left-radius
+                                span.right-radius
+                                input(type="text", name="first_name", data-message="please input your First Name")
+                        .form-control
+                            label(for="last_name") Last Name
+                            .custom-input
+                                span.left-radius
+                                span.right-radius
+                                input(type="text", name="last_name", data-message="please input your Last Name")
+                        button.btn.submit-reg-btn(type="submit", title="get keycode now")
                 ul.note
                     li 1. You have to install and activate it(please connect to internet to register)before the Giveaway offer for the software is over.
                     li 2. No free upgrades to future versions and technical support(Includes offline registration)will be provided for Giveaway Products.
                 .products
                     .promotion1.pull-left
                         img(src="img/promotion1.jpg", alt="test leawo")
-                        a.hide-text(href="") get it now
+                        a(href="#", title="get it now")
                     .promotion2.pull-right
                         img(src="img/promotion2.jpg", alt="tunes cleaner")
-                        a.hide-text(href="") get it now
-                    .clearfix
+                        a(href="#", title="get it now")
                     .special-offer
                         h3.special-offer-title
                             span.icon.icon-star.gap-right-15
                             | Special Offer for GOTD Users
-                        ul.special-offer-list
+                        ul.special-offer-list.clearfix
                             li.special-offer-item.pull-left
                                 h5 Leawo Blu-ray Ripper
                                     span.icon.icon-both-osx-windows.gap-left-10
                                 .thumbnail.text-center
                                     a(href="#")
-                                        img(src="img/product1.jpg")
+                                        img(src="img/product1.jpg", alt="Leawo Blu-ray Ripper")
                                 p Provide excellent solutions for ultra DVD and video enjoyment with powerful video editing features and many user-friendly options.
                                 .price
                                     span.ori-price.gap-right-15 $164.85
                                     span.cur-price $99.95
                                 .buy-btn-group
-                                    a.btn.buy-windows-btn.gap-right-10.hide-text(href="#") buy now
-                                    a.btn.buy-osx-btn.hide-text(href="#") buy now
+                                    a.btn.buy-windows-btn.gap-right-10(href="#", title="buy windows")
+                                    a.btn.buy-osx-btn(href="#", title="buy osx")
                             li.special-offer-item.pull-left
                                 h5 Leawo Blu-ray Copy
                                     span.icon.icon-both-osx-windows.gap-left-10
                                 .thumbnail.text-center
                                     a(href="#")
-                                        img(src="img/product2.jpg")
+                                        img(src="img/product2.jpg", alt="Leawo Blu-ray Copy")
                                 p Provide excellent solutions for ultra DVD and video enjoyment with powerful video editing features and many user-friendly options.
                                 .price
                                     span.ori-price.gap-right-15 $164.85
                                     span.cur-price $99.95
                                 .buy-btn-group
-                                    a.btn.buy-windows-btn.gap-right-10.hide-text(href="#") buy now
-                                    a.btn.buy-osx-btn.hide-text(href="#") buy now
+                                    a.btn.buy-windows-btn.gap-right-10(href="#", title="buy windows")
+                                    a.btn.buy-osx-btn(href="#", title="buy osx")
                             li.special-offer-item.last.pull-left
                                 h5 Leawo Blu-ray Player
                                     span.icon.icon-windows.gap-left-10
                                 .thumbnail.text-center
                                     a(href="#")
-                                        img(src="img/product3.jpg")
+                                        img(src="img/product3.jpg", alt="Leawo Blu-ray Player")
                                 p Provide excellent solutions for ultra DVD and video enjoyment with powerful video editing features and many user-friendly options.
                                 .price
                                     span.ori-price.gap-right-15 $164.85
                                     span.cur-price $99.95
                                 .buy-btn-group
-                                    a.btn.buy-windows-btn.hide-text(href="#") buy now
-                            li.clearfix
+                                    a.btn.buy-windows-btn(href="#", title="buy windows")
         .foot
             .foot-content
-                p
-                    a(href="#") Home 
-                    a(href="#") Privacy Policy 
-                    a(href="#") Terms of Use 
-                    a(href="#") About 
-                    a(href="#") Friendlink
-                    a(href="#") Affiliate  
-                    a.last(href="#") Software Store
+                ul.clearfix
+                    li
+                        a(href="#") Home 
+                    li
+                        a(href="#") Privacy Policy 
+                    li
+                        a(href="#") Terms of Use 
+                    li
+                        a(href="#") About 
+                    li
+                        a(href="#") Friendlink
+                    li
+                        a(href="#") Affiliate  
+                    li.last
+                        a(href="#") Software Store
                 p Copyright &copy; 2006 - 2011 Leawo Software Co., Ltd. All Rights Reserved.
         script(src="js/jquery-1.11.1.min.js")
+        script(src="js/main.js")
