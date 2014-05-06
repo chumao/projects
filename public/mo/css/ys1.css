@@ -46,6 +46,7 @@ h1 {
     font-weight: bold;
     font-size: 14px;
     padding-bottom: 10px;
+    padding-left: 26px;
 }
 h2 {
     color: #be0000;
@@ -102,7 +103,7 @@ li {
 .style_text_color {
     color: #286196;
     font-size: 12px;
-    padding: 0px 10px;
+    padding: 0px 26px;
     line-height: 1.4em;
 }
 .style_text_color_1 {
@@ -127,20 +128,20 @@ li {
 #header {
     margin: 0 90px;
     position: relative;
-    height: 650px;
+    height: 640px;
 }
 #content_header {
     position: absolute;
     width: 320px;
-    height: 400px;
-    right: 40px;
+    height: 300px;
+    right: 14px;
     top: 160px;
 }
 #content_1_header {
     position: absolute;
     top: 570px;
     right: 0px;
-    width: 760px;
+    width: 750px;
 }
 .style_form_1 {
     padding: 25px 36px;
@@ -152,31 +153,62 @@ li {
     letter-spacing: -0.6px;
     line-height: 20px;
 }
-#header input {
-    width: 220px;
-    height: 17px;
-    margin-bottom: 11px;
-    border: none;
-    outline: none;
-}
 .header_a_1 {
     display: inline-block;
-    width: 180px;
+    width: 195px;
     height: 30px;
-    margin: 24px;
-    background: none;
+    margin: 10px 24px;
+    background: url(../img/icon.jpg) no-repeat -1px -66px;
     border:none;
     outline: none;
     cursor: pointer;
 }
+.cont_form1 {
+    position: relative;
+    padding: 5px 0 0 3px;
+}
+#header input {
+    border: none;
+    height: 18px;
+    line-height: 18px;
+    width: 100%;
+    background: none;
+    outline: none;
+}
+.border_form {
+    height: 18px;
+    background: url("../img/input-bg.png") 0 0 repeat-x;
+    position: relative;
+    padding: 4px;
+}
+.border_left_form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 25px;
+    background: url(../img/input-radius.png) left top no-repeat;
+}
+.border_right_form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 25px;
+    background: url(../img/input-radius.png) right top no-repeat;
+}
+#main_1 {
+    padding-left: 70px;
+    padding-top: 20px;
+}
 #main_1_1 {
     float: left;
-    padding-left: 66px;
+    padding-left: 20px;
     position: relative;
 }
 #main_1_2 {
     float: right;
-    padding-right: 56px;
+    padding-right: 20px;
     position: relative;
 }
 .main_1_a_1 {
@@ -198,7 +230,7 @@ li {
 #main_2 {
     background: url(../img/icon.jpg) -60px -2px no-repeat;
     height: 22px;
-    margin: 26px 80px;  
+    margin: 26px 40px;  
 }
 .style_main_text_color {
     display: inline-block;
@@ -206,7 +238,7 @@ li {
 }
 #main_3 {
     position: relative;
-    margin-left: 90px;
+    margin-left: 120px;
     padding-top: 20px;
 }
 #main_3_1 {
